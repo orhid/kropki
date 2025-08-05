@@ -1,0 +1,43 @@
+theme = "kanagawa-dragon"
+
+[editor]
+color-modes = true
+true-color = true
+line-number = "relative"
+mouse = false
+
+# continue-comments = false
+
+[editor.cursor-shape]
+insert = "bar"
+normal = "block"
+select = "underline"
+
+[editor.whitespace.render]
+space = "all"
+tab = "all"
+nbsp = "all"
+nnbsp = "all"
+newline = "none"
+
+[editor.indent-guides]
+render = true
+character = "╎"
+skip-levels = 1
+
+[editor.gutters]
+layout = ["diff", "diagnostics", "line-numbers", "spacer"]
+
+[editor.statusline]
+left = ["mode", "file-base-name", "read-only-indicator", "file-modification-indicator"]
+center = ["diagnostics"]
+right = ["position", "file-type", "file-encoding", "separator", "version-control"]
+
+[keys.insert]
+esc = ["collapse_selection", "normal_mode"]
+
+[keys.normal]
+esc = ["collapse_selection", "keep_primary_selection"]
+
+[keys.select]
+esc = ["collapse_selection", "keep_primary_selection", "normal_mode"]
