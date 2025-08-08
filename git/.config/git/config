@@ -1,3 +1,7 @@
+[include]
+	path = alias
+	path = dupc
+
 # settings
 
 [core]

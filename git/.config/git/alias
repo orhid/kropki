@@ -1,0 +1,12 @@
+[alias]
+	# skroty
+	a = add
+	u = add -u
+	aa = add -A
+	c = commit -m
+	cs = commit -S -m
+	s = status -sb
+
+	# opcyje
+	amend = commit --amend --reuse-message=HEAD
+	amends = commit -S --amend --reuse-message=HEAD

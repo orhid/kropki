@@ -1,0 +1,29 @@
+# krakoskie kurwa
+
+[alias]
+	wdupc = add
+	wdupcaj = add -u
+	wdupcajkurwa = add -A
+
+	kurwa = commit -S -m
+	bezgumy = commit -m
+	achkurwa = commit -S --ammend --reuse-message=HEAD
+
+	chuju = status -sb
+
+	obczaj = fetch
+	ssij = pull
+	nadupcaj = push
+	nadupcajkurwa = !sh -c 'CURRENT=`git branch --show-current` && \
+		git push --set-upstream origin $CURRENT' --
+
+	zjebalem = restore
+	jebac = reset HEAD --
+
+	# drukuj obelgi
+	obelgi = !git config --list | \
+		grep 'alias\\.' | \
+		sed 's/alias\\.\\([^=]*\\)=\\(.*\\)/\\1 => \\2/' | \
+		grep -v 'alias'| \
+		awk 'BEGIN { FS = \"=>\" }{ printf(\"%-20s=>%s\\n\", $1,$2)}' | \
+		sort
