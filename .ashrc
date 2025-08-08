@@ -17,11 +17,14 @@ alias mkdir="mkdir -vp"
 # ## eza or ls
 if command -v eza >/dev/null 2>&1; then
 	alias ls="eza -AF --color=always \
+		--follow-symlinks \
 		--group-directories-first"
 	alias ll="eza -lbAF --color=always --git \
+		--follow-symlinks \
 		--group-directories-first \
 		--time-style=+%b%d:%I:%M%p"
 	alias lt="eza -lbAF -T -L2 --color=always --git \
+		--follow-symlinks \
 		--group-directories-first \
 		--time-style=+%b%d:%I:%M%p"
 else
