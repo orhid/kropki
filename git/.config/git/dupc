@@ -17,6 +17,9 @@
 	nadupcajkurwa = !sh -c 'CURRENT=`git branch --show-current` && \
 		git push --set-upstream origin $CURRENT' --
 
+	konar = branch
+	zdupcajna = checkout
+
 	zjebalem = restore
 	jebac = reset HEAD --
 

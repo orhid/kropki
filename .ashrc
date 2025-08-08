@@ -19,14 +19,13 @@ if command -v eza >/dev/null 2>&1; then
 	alias ls="eza -AF --color=always \
 		--follow-symlinks \
 		--group-directories-first"
-	alias ll="eza -lbAF --color=always --git \
+	alias la="eza -lbAF --color=always --git \
 		--follow-symlinks \
 		--group-directories-first \
 		--time-style=+%b%d:%I:%M%p"
-	alias lt="eza -lbAF -T -L2 --color=always --git \
-		--follow-symlinks \
-		--group-directories-first \
-		--time-style=+%b%d:%I:%M%p"
+	alias ll="la --git-ignore"
+	alias lta="la -T -L3"
+	alias lt="lta --git-ignore"
 else
 	alias ls="ls -AF --color=always \
 		--group-directories-first"
