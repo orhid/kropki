@@ -1,0 +1,1 @@
+polecenie `stow */` stosuje ustawienia.
