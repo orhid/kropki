@@ -7,12 +7,23 @@ PS1="$PSHOST:\[\033[0;34m\]\W \[\033[1;33m\]ø \[\033[0m\]"
 export HELIX_RUNTIME=/vault/helix/runtime
 
 
+# # stow kropki
+(cd /etc/kropki && stow */ --target=$HOME)
+
+
+# # load ssh keys
+if command -v ssh-tpm-agent >/dev/null 2>&1; then
+	ssh-tpm-add $HOME/.ssh/*.tpm
+fi
+
+
 # # aliases
 # ## safe·operations
 alias cp="cp -ivp"
 alias mv="mv -iv"
 alias rm="rm -i"
 alias mkdir="mkdir -vp"
+
 
 # ## eza or ls
 if command -v eza >/dev/null 2>&1; then
