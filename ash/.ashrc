@@ -13,7 +13,7 @@ export HELIX_RUNTIME=/vault/helix/runtime
 
 # # load ssh keys
 if command -v ssh-tpm-agent >/dev/null 2>&1; then
-	ssh-tpm-add $HOME/.ssh/*.tpm
+	ssh-tpm-add $HOME/.ssh/*.tpm >/dev/null
 fi
 
 
