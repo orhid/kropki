@@ -14,7 +14,7 @@ fi
 
 
 # # load ssh keys
-# -- these should be in and and statement
+# -- these should be in and an statement
 if command -v ssh-tpm-agent >/dev/null 2>&1; then
 	if [ -d $HOME/.ssh ]; then
 		ssh-tpm-add $HOME/.ssh/*.tpm >/dev/null
