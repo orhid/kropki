@@ -1,11 +1,11 @@
 [flags]
 basic = true
-tree = true
-# group_processes = true # incompatible with tree
-
-hide_avg_cpu = true
 rate = "3s"
+
+[cpu]
+hide_avg_cpu = true
 
 # processes widget configuration
 [processes]
-columns = ["PID", "Name", "CPU%", "Mem%", "User", "State", "GMem%", "GPU%"]
+columns = ["Name", "CPU%", "Mem%", "User", "State", "GMem%", "GPU%"]
+default_tree = true
