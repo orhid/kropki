@@ -1,1 +1,1 @@
-use-grammars = { only = [ "bash", "lua", "toml" ] }
+use-grammars = { only = [ "bash", "lua", "toml", "rust" ] }

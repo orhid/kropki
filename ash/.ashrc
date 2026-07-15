@@ -87,7 +87,7 @@ PSHOST="\[\033[0;36m\]\h\[\033[0m\]"
 PS1='$PSHOST:\[\033[0;34m\]$(proompt_pwd)$(git_proompt)\[\033[1;33m\] $(proompt_user_mark) \[\033[0m\]'
 
 # # exports
-export HELIX_RUNTIME=/vault/helix/runtime
+export HELIX_RUNTIME=/vault/cache/helix/runtime
 
 
 # # aliases
