@@ -1,0 +1,21 @@
+#!/bin/sh
+
+capacity="$(cat /sys/class/power_supply/BAT1/capacity)"
+colour=""
+ac=""
+
+if [ $capacity -lt 36 ]; then
+	colour="\e[0;31m"
+fi
+
+if [ $capacity -gt 84 ]; then
+	colour="\e[0;32m"
+fi
+
+if [ $(cat /sys/class/power_supply/AC/online) = 1 ]; then
+	colour="\e[0;33m"
+	ac="!"
+fi
+
+printf "$colour$capacity$ac\e[0m"
+
