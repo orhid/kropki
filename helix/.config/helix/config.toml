@@ -4,6 +4,7 @@ theme = "everforesttty"
 color-modes = true
 true-color = true
 line-number = "relative"
+smart-tab.enable = false
 mouse = false
 
 # continue-comments = false
